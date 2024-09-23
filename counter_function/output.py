@@ -1,10 +1,7 @@
-from Function_creation.loop import counter
+from Function_creation.loop import create_counter
 
 
-def counter_functions():
-    n = 9
-    counter(n)
-
-
-if __name__ == "__main__":
-    counter_functions()
+counter = create_counter(10)
+values = counter()
+for value in values:
+    print(value)

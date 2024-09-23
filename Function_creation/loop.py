@@ -1,5 +1,11 @@
-def counter(n):
-    for i in range(n, 12):
-        n = n+1
-        print(n)
-    return n
+def create_counter(n):
+
+    def counter():
+        result = []
+        current = n
+        for _ in range(3):
+            result.append(current)
+            current += 1
+        return result
+
+    return counter
